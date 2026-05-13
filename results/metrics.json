@@ -1,0 +1,87 @@
+[
+  {
+    "name": "ANN / MLP HR tabular classifier",
+    "train_accuracy": 0.8506887583084481,
+    "test_accuracy": 0.8528505392912172,
+    "epochs": 12,
+    "notes": "Trained on hrdata3.csv with 5 standardized input features."
+  },
+  {
+    "name": "CNN digits classifier",
+    "train_accuracy": 0.954070981210856,
+    "test_accuracy": 0.9416666666666667,
+    "epochs": 16,
+    "notes": "Trained on the scikit-learn digits image dataset."
+  },
+  {
+    "name": "RNN news text classifier",
+    "train_accuracy": 0.779375,
+    "test_accuracy": 0.68,
+    "epochs": 4,
+    "notes": "Trained on a balanced news.csv subset with vocabulary size 8000."
+  },
+  {
+    "name": "LSTM news text classifier",
+    "train_accuracy": 0.881875,
+    "test_accuracy": 0.8475,
+    "epochs": 4,
+    "notes": "Trained on a balanced news.csv subset with vocabulary size 8000."
+  },
+  {
+    "name": "Q-learning GridWorld",
+    "average_last_50_reward": 0.366,
+    "final_10_episode_moving_average_reward": 1.32,
+    "moving_average_window": 10,
+    "episodes": 150,
+    "policy": [
+      [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        0,
+        2,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "notes": "Tabular Q-learning with epsilon-greedy exploration and Bellman updates."
+  },
+  {
+    "name": "NumPy CNN primitives",
+    "edge_map_shape": [
+      8,
+      8
+    ],
+    "pooled_shape": [
+      4,
+      4
+    ],
+    "notes": "Ran Laplacian edge detection and max pooling on a scikit-learn digit image."
+  }
+]
